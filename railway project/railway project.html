@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+ <html lang="en">
+ <head>
+   
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Railway Reservation System</title> 
+    <style> 
+        html,body{
+        margin:0; 
+        padding:0; 
+        box-sizing: border-box;
+        background-image: url("train-railway-forest.jpg"); 
+        background-size: 1500px;  
+    }
+
+        #nav-fixed{
+            position: relative;
+            width: 100%; 
+            padding:10px 0; 
+            background-color:white; 
+            color: black; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            border-style:ridge;
+        }
+
+        ul{
+            text-decoration: none;
+            list-style-type: none; 
+            margin: 15px; 
+            padding:0;
+        }
+
+        li{    
+            display: inline;
+            margin: 15px 10px;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+           
+        }
+        li:hover{
+            border-bottom:3px inset blue;
+            color: blue;
+            cursor:pointer;
+            
+        }
+
+        .active{
+            color: blue;
+            border-bottom:3px solid blue;
+        }
+        .signup-form{
+            width:500px;
+            background-color:rgba(0, 0, 0, 0.3);
+            border:rgba(0,0,0, 0.4);
+            border-style:solid;
+            border-width:5px;
+            height: 500px;
+            padding: 15px;
+            /* padding-top: 100px; */
+            margin-left: 10%;
+            margin-top: 5% ;
+            margin-bottom: 10%;
+        
+        }
+        .Signup-head{
+            padding: 80px;
+            margin-bottom:-78px;
+            margin-top: -50px;
+        
+            
+        }
+        .signup-content .radio{
+            margin:10px 10px;
+    }
+    .signup-content2 .input{
+        width:400px;
+        padding:10px;
+        margin:10px;
+        color:rgb(9, 9, 9);
+    }
+    .signup-content2 .tarikh{
+        margin:10px;
+        padding:10px;
+        color:rgb(10, 10, 10);
+    }
+    .signup-content2  .person{
+        padding:10px;
+        margin:10px;
+        color:rgb(10, 10, 10);
+    }
+    .signup-content2 .travel{
+        margin:20px 20px;
+    }
+    .signup-content2 .travel2{
+        padding:5px;
+    }
+    .signup-content2 .submit-btn{
+        border:none;
+        outline:none;
+        width:200px;
+        height:50px;
+        padding:10px;
+        margin-right:100px;
+        margin-top: 20px;
+        margin-left:100px ;
+    }
+      .submit-btn.bg-warning{
+           cursor: pointer;
+        }
+        .text-white.travel{
+            cursor: pointer;
+        }
+        .flip-icon{
+            color: black;
+            height: 400px;
+        }
+        .am{
+            text-decoration: none;
+            color: black;
+        }
+
+    
+    
+
+    </style> 
+</head> 
+<body>
+    <nav id="nav-fixed">
+                     <ul>
+                        <li class="active">HOME</li>
+                        <li class="am"><a href="meals.html" target="_blank">MEALS</a></li>
+                        <li>HOLIDAY PACKAGES</li>
+                        <li>SERVICE AT STATION</li>
+                        <li>CONTACT US</li>
+
+                    </ul>   
+            </div>
+        </div>
+    </nav> 
+    <form>
+
+        <div class="signup-form ">
+
+            <div class="Signup-head ">
+                <h1>Reserve Your Ticket</h1>
+            </div>
+
+            <div class="signup-content">
+                <input type="radio" class="radio" name="r">
+                <label class="text-white">One Way</label>
+                <input type="radio" class="radio" name="r">
+                <label class="text-white">Return</label>
+            </div>
+
+            <div class="signup-content2">
+                <input type="text" placeholder="From" class="input">
+                <input type="button"  class="fa fa-exchange rotate">
+                <input type="text" placeholder="To" class="input "><br>
+            
+
+            <label class="text-white" style="margin-left:10px;">Depart</label>
+            <input type="date" class="tarikh bg-dark text-white">
+            <label class="text-white" style="margin-left:10px;">Return</label>
+            <input type="date" class="tarikh bg-dark">
+
+            <input type="number" class="bg-dark person" placeholder="Adults">
+            <input type="number" class="bg-dark person" placeholder="Children"><br>
+
+            <label class="text-white travel">Travel Class</label>
+            <select class="bg-dark text-white travel2">
+                <option></option>
+                <option>First Class/1A</option>
+                <option>AC 2tier/2A</option>
+                <option>AC 3tier/3A</option>
+                <option>Executive class chair car/Economy Class</option>
+                <option>AC Chair Car</option>
+                <option>Sleeper Class</option>
+                <option>Second Class</option>
+                <option>General</option>
+            </select>
+
+            <input type="submit" value="Check Availability" class="submit-btn bg-warning">
+        </div>
+        </div>
+    </form>
+ 
+   
+</body> 
+</html>

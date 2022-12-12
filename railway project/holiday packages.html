@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+#nav-fixed{
+            position:relative;
+            width: 100%; border-bottom:1px solid #f1f1f1;
+            padding:10px 0; 
+            background-color:white; 
+            color: black; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            border-style:ridge;
+        }
+        ul{
+            text-decoration: none;
+            list-style-type: none; 
+            margin: 15px; 
+            padding:0;
+            text-decoration: none;
+        }
+
+        li{    
+            display: inline;
+            margin: 15px 10px;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+           
+        }
+        li:hover{
+            border-bottom:3px inset blue;
+            color: blue;
+            cursor:pointer;
+            
+        }
+
+        .active{
+            color: blue;
+            border-bottom:3px solid blue;
+        }
+
+.row {
+  margin: left 5px;
+  margin: right 5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+  
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+    <nav id="nav-fixed">
+		<ul>
+		   <li ><a href="railway project.html"></a>Home</li>
+		   <li >MEALS</li>
+		   <li class="active">HOLIDAY PACKAGES</li>
+		   <li>SERVICE AT STATION</li>
+		   <li>CONTACT US</li>
+        </ul>
+</nav> 
+
+<div class="row">
+  <div class="column">
+    <table>
+      <tr>
+        <th><img src="hpack1.jpg" alt=""></th>
+      </tr>
+      <tr>
+        <th>Package Code</th>
+        <td>SHR075</td>
+      </tr>
+      <tr>
+         <th>Package Name</th>
+         <td>Sai Sannidhi Ex Tirupati</td>
+     </tr>
+      <tr>
+         <th>Destination Covered</th>
+         <td>Shirdi - Shanishingnapur</td>
+      </tr>
+      <tr>
+        <th>Frequency</th>
+        <td>Every Tuesday</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table>
+      <tr>
+        <th><img src="hpack2.jpg" alt=""></th>
+      </tr>
+      <tr>
+        <th>Package Code</th>
+        <td>NCH24</td>
+      </tr>
+      <tr>
+        <th>Package Name</th>
+        <td>AMRITSAR-DEVI DARSHAN</td>
+      </tr>
+      <tr>
+        <th>Destination Covered</th>
+        <td>Amritsar- Dharamshala-Chandigarh</td>
+      </tr>
+      <tr>
+        <th>Frequency</th>
+        <td>Daily</td>
+      </tr>
+    </table>
+</div>
+
+<div class="row1">
+    <div class="column1">
+      <table>
+        <tr>
+          <th><img src="hpack3.jpg" alt=""></th>
+        </tr>
+        <tr>
+          <th>Package Code</th>
+          <td>SMR050</td>
+        </tr>
+        <tr>
+           <th>Package Name</th>
+           <td>Chennai-Shirdi Package</td>
+       </tr>
+        <tr>
+           <th>Destination Covered</th>
+           <td>Shirdi</td>
+        </tr>
+        <tr>
+          <th>Frequency</th>
+          <td>Every Wednesday</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr>
+          <th><img src="hpack4.jpg" alt=""></th>
+        </tr>
+        <tr>
+          <th>Package Code</th>
+          <td>SCBA48</td>
+        </tr>
+        <tr>
+          <th>Package Name</th>
+          <td>HERITAGE TOUR OF RAJASTHAN EX BHUBANESWAR </td>
+        </tr>
+        <tr>
+          <th>Destination Covered</th>
+          <td> BHUBANESWAR</td>
+        </tr>
+        <tr>
+          <th>Frequency</th>
+          <td>Daily</td>
+        </tr>
+      </table>
+  </div>
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th><img src="hpack5.jpg" alt=""></th>
+        </tr>
+        <tr>
+          <th>Package Code</th>
+          <td>SER089</td>
+        </tr>
+        <tr>
+           <th>Package Name</th>
+           <td>Stream Express</td>
+       </tr>
+        <tr>
+           <th>Destination Covered</th>
+           <td>Stream Areas</td>
+        </tr>
+        <tr>
+          <th>Frequency</th>
+          <td>Every Tuesday</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr>
+          <th><img src="hpack6.jpg" alt=""></th>
+        </tr>
+        <tr>
+          <th>Package Code</th>
+          <td>HFM09</td>
+        </tr>
+        <tr>
+          <th>Package Name</th>
+          <td>Himachal Fantasy</td>
+        </tr>
+        <tr>
+          <th>Destination Covered</th>
+          <td>Manali-Shimla</td>
+        </tr>
+        <tr>
+          <th>Frequency</th>
+          <td>Every Tuesday</td>
+        </tr>
+      </table>
+  </div>
+  
+
+</body>
+</html>
